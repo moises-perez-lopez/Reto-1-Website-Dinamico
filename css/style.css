@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	background:#D4E2FF;
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+
+	/* Flexbox */
+	/*display:flex;
+	flex-flow:row wrap;*/
+	flex: 1; 
+}
+
+body {
+	background:#FFFFFF;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+	background:#5D92FF;
+	width:100%;
+	padding:20px;
+
+	/* Flexbox */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header .logo {
+	color:#fff;
+	font-size:30px;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+header .logo img {
+    width:100px;
+	vertical-align: center;
+}
+
+header .logo .titulo_pagina {
+	color:#000000;
+	text-decoration: none;
+	line-height:50px;
+	vertical-align: center;
+	padding:20px;
+	
+}
+
+header nav {
+	width:50%;
+	/* Flexbox */
+
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+header nav a {
+	background:#003DB9;
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
+	/* Flexbox */
+	flex-grow:1;
+}
+
+header nav a:hover {
+	background:#90B4FF;
+	color: #122347;
+}
+
+.main {
+	padding:20px;
+	flex:1 1 70%;
+	/*flex:1;*/
+	background: #D4E2FF;
+}
+
+.main article {
+	margin-bottom: 20px;
+	padding-bottom:20px;
+	border-bottom:1px solid #000;
+}
+
+.main .tecnologias{
+    padding-top:20px;
+ }
+
+.main .info_puesto{
+   font-size: 20px;
+}
+
+.empresas{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+
+.imagenes{
+	margin-bottom: 5px;
+}
+
+footer {
+	background:#5D92FF;
+	width:90%;
+	max-width:1000px;
+	margin: auto;
+
+	/* Flexbox */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+footer .links {
+	background:#003DB9;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+footer .links a {
+	flex-grow:1;
+
+	color:#fff;
+	padding:10px;
+	text-align: center;
+	text-decoration:none;
+}
+
+footer .links a:hover {
+	background:#90B4FF;
+	color: #122347;
+}
+
+footer .social {
+	background:#003DB9;
+}
+
+footer .social a {
+	color:#fff;
+	text-decoration: none;
+	padding:10px;
+	display: inline-block;
+}
+
+footer .social a:hover {
+	background:#D3E1FF;
+	color: #122347;
+}
+
+
+@media screen and (max-width: 800px) {
+	.contenedor {
+		flex-direction:column;
+	}
+
+	header {
+		flex-direction:column;
+		padding:0;
+	}
+
+	header .logo {
+		margin:20px 0;
+	}
+
+	header nav {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	footer {
+		justify-content:space-around;
+	}
+}
