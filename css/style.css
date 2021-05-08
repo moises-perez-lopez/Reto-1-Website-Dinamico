@@ -100,10 +100,6 @@ header nav a:hover {
     padding-top:20px;
  }
 
-.main .info_puesto{
-   font-size: 20px;
-}
-
 .empresas{
 	display: flex;
 	flex-wrap:wrap;
@@ -112,6 +108,28 @@ header nav a:hover {
 
 .imagenes{
 	margin-bottom: 5px;
+}
+
+.titulo{
+	padding-top: 5px;
+	padding-bottom: 8px;
+}
+
+.formacion{
+	padding-top: 5px;
+	padding-bottom: 8px;
+	background: #DDE8FF;
+	font-size: 20px;
+}
+
+.main .formacion:hover {
+	background:#90B4FF;
+	color: #122347;
+	font-size: 30px;
+}
+
+.main .lugar{
+	font-size: 20px;
 }
 
 footer {
